@@ -3,11 +3,12 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/electroboom");
+  await mongoose.connect(process.env.MONGODB_URI);
   console.log("MongoDB connected");
 }
 
@@ -96,11 +97,10 @@ app.post("/send-email", async (req, res) => {
 
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
-      // Provide your email service credentials or use a third-party SMTP service
       service: "Gmail",
       auth: {
-        user: "malhotrazmr@gmail.com",
-        pass: "mcahzenfhizfgjmv",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
       tls: {
         rejectUnauthorized: false,
@@ -109,7 +109,7 @@ app.post("/send-email", async (req, res) => {
 
     // Send the email
     await transporter.sendMail({
-      from: "malhotrazmr@gmail.com", // Replace with your email address
+      from: process.env.EMAIL_USER,
       to: email,
       subject: "Order Confirmation",
       html: `
