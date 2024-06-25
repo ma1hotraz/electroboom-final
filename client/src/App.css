@@ -1,0 +1,198 @@
+.logo-img {
+  height: 32px;
+  margin-top: 5px;
+  margin-right: 8px;
+  animation: 5s linear infinite logoimg;
+}
+@keyframes logoimg {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.logo-login {
+  animation: 5s linear infinite logoimg;
+}
+@keyframes logoimg {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* form {
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 50px;
+  margin: 50px auto;
+  border-radius: 5px;
+} */
+
+.form-control:focus {
+  border-color: #00b4d8;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #00b4d8;
+  border-color: #00b4d8;
+}
+
+.btn-primary:hover {
+  background-color: #0096c7;
+  border-color: #0096c7;
+}
+
+label {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 8px;
+}
+
+form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00b4d8;
+}
+
+input {
+  margin-bottom: 8px;
+}
+
+.categories {
+  /* padding: 10px 80px ; */
+}
+
+/* .cats{
+    width: 80%;
+} */
+
+.carousel-control-next,
+.carousel-control-prev {
+  /* width: %; */
+}
+
+/* .carousel-indicators [data-bs-target] {
+  width: 0px;
+} */
+
+/* .hdfc {
+  width: 75%;
+} */
+.MuiDivider-root {
+  background-color: #0000003e;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    scrollbar-width: 0px;
+  }
+  .proimg {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  body {
+    scrollbar-width: 0px;
+  }
+}
+
+.api {
+  padding-top: 100px;
+  background-image: url(/public/images/bg.png);
+  /* background-color: gray;
+  background-blend-mode: multiply; */
+}
+
+.drawer .MuiButtonBase-root {
+  color: black !important;
+}
+
+/* .api-loader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 200px;
+} */
+/* .aa {
+  height: 100vh;
+} */
+
+.css-1lgsh7h-MuiTypography-root {
+  animation: 2s infinite logo alternate;
+}
+@keyframes logo {
+  from {
+  }
+
+  33% {
+    color: rgb(255, 255, 181);
+  }
+  66% {
+    color: #76e8ff;
+  }
+  100% {
+    color: rgb(46, 253, 163);
+  }
+}
+.aaaa {
+  margin-top: 100px;
+}
+
+.main-body {
+  margin-top: 50px;
+  background-image: url("/public/images/banner22.jpg");
+  /* background-color: rgba(0, 0, 0, 0.17);
+  background-blend-mode: overlay; */
+  background-size: cover;
+}
+
+.contact-main {
+  background-image: url("/public/images/low_poly_banner_design_1711.jpg");
+  /* background-color: rgba(37, 166, 241, 0.263);
+  background-blend-mode: overlay; */
+  background-size: cover;
+}
+.faq-main {
+  background-image: url("/public/images/banner22.jpg");
+  /* background-color: rgba(37, 166, 241, 0.263);
+  background-blend-mode: overlay; */
+  background-size: cover;
+}
+
+.map {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.checkout-main {
+  /* background-image: url("/public/images/abstract-geometric-square-white-background-light-shadow_51543-426.avif"); */
+  background-image: url("/public/images/abstract-geometric-square-white-background-light-shadow_51543-426.avif");
+  background-size: cover;
+}
+
+@media screen and (min-width: 390px) {
+  .proimg {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.slick-dots {
+  display: none;
+}

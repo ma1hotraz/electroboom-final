@@ -1,0 +1,89 @@
+.banner-container {
+  /* max-width: 100%; */
+  padding-top: 64px;
+  background-color: #033d65;
+}
+.banner img {
+  width: 100%;
+}
+
+.offers-head {
+  padding: 10px 40px;
+  margin: 0px 7px;
+  /* font-size: 30px !important; */
+  /* font-weight: bold; */
+
+  border-radius: 10px;
+  animation: 0.5s infinite alternate slidein;
+
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    180deg,
+    #4e9af6 0%,
+    #a5d4fe 50%,
+    #4e9af6 100%
+  );
+}
+@keyframes slidein {
+  from {
+    background-image: linear-gradient(
+      180deg,
+      #4e9af6 0%,
+      #a5d4fe 50%,
+      #4e9af6 100%
+    );
+  }
+
+  to {
+    background-image: linear-gradient(
+      180deg,
+      #a5d4fe 0%,
+      #4e9af6 50%,
+      #a5d4fe 100%
+    );
+    /* font-size: 2.32rem; */
+  }
+}
+.head-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.MuiGrid-root img {
+  filter: opacity(0.9);
+  /* max-height: 254px !important; */
+}
+.MuiGrid-root img:hover {
+  filter: opacity(1);
+  /* max-height: 254px !important; */
+}
+
+.offer-products {
+  background-color: #a5d4fe;
+}
+.offer-products .slide:hover {
+  transform: scale(1);
+  box-shadow: none;
+  border-radius: 0px;
+}
+.offer-slide {
+  /* position: relative; */
+
+  max-width: 95%;
+  transition: 0.3s ease-out;
+
+  /* padding: 0px 10px; */
+}
+.offer-slide:hover {
+  /* position: relative; */
+
+  max-width: 95%;
+  transform: scale(0.98);
+
+  /* padding: 0px 10px; */
+}
+
+.css-19midj6 {
+  margin: 0px 10px;
+}

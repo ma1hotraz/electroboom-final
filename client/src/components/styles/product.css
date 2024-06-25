@@ -1,0 +1,40 @@
+.card-img-top {
+  max-height: 350px;
+  /* object-fit: cover; */
+}
+
+.card {
+  min-height: 550px;
+}
+
+.products-page-bg-img {
+  background-image: url("/public/images/banner22.jpg");
+}
+
+.col-md-3 h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.categories-menu {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  border-radius: 8px;
+  position: sticky;
+  top: 80px;
+}
+/* .categories-menu button {
+  background-color: black;
+  color: white;
+}
+.categories-menu button:hover {
+  background-color: rgba(0, 0, 0, 0.716);
+  color: white;
+} */
+
+.main h1 {
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+.main {
+  min-height: 80vh;
+}
