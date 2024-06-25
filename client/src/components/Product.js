@@ -16,7 +16,9 @@ const Product = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/productsdata");
+        const response = await axios.get(
+          "http://localhost:3001/api/productsdata"
+        );
         setData(response.data);
         setFilteredData(response.data);
         setLoading(false);

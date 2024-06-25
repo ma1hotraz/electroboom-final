@@ -116,7 +116,7 @@ function CheckoutPage() {
     // Perform validation and submit the form
 
     try {
-      const response = await fetch("http://localhost:3001/send-email", {
+      const response = await fetch("http://localhost:3001/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

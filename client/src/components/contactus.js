@@ -33,7 +33,7 @@ const ContactUsPage = () => {
     setEmail("");
     setMessage("");
 
-    const response = await fetch("http://localhost:3001/electroboom", {
+    const response = await fetch("http://localhost:3001/api/electroboom", {
       method: "POST",
       body: JSON.stringify(formData), //body is incompatible with objects, in network usully we send strings
       headers: {
